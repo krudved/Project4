@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<html>
+<body>
+{% if data1.res1 %}
+    <table border="2" align="center">
+    <tr><th><img src="{% static 'images/bats/bat1.jpg' %}" width="150" height="150"/>
+        <br/><span>Batsman</span></th>
+        <th><img src="{% static 'images/bats/bats2.jpg' %}" width="150" height="150"/>
+            <br/><span>Batsman</span></th>
+        <th><img src="{% static 'images/bats/bats3.jpg' %}" width="150" height="150"/>
+            <br/><span>Batsman</span></th></tr>
+</table>
+{% endif %}
+{% if data1.res2 %}
+    <table border="2" align="center">
+    <tr><th><img src="{% static 'images/bowler/ball1.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th>
+        <th><img src="{% static 'images/bowler/ball2.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th>
+        <th><img src="{% static 'images/bowler/ball3.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th></tr>
+</table>
+    <hr/>
+{% endif %}
+{% if data1.res3 %}
+    <table border="2" align="center">
+    <tr><th><img src="{% static 'images/wicket/keeper1.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th>
+        <th><img src="{% static 'images/wicket/keeper2.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th>
+        <th><img src="{% static 'images/wicket/keeper3.jpg' %}" width="150" height="150"/><br/><span>Bowler</span></th></tr>
+</table>
+    <hr/>
+{% endif %}
+</body>
+</html>
